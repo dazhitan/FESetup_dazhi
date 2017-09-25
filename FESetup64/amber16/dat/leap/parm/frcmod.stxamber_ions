@@ -1,0 +1,12 @@
+STX-AMBER
+MASS
+Cl- 35.45         0.616               assumed to be Cl- (ion minus)
+Mg2+ 24.305         0.616               magnesium
+Na+ 22.99         0.616               assumed to be Na+ (ion plus)
+K+  39.1         0.616               potassium
+
+NONB
+ Cl-          1.9710  1.0000
+ Na+          1.9082  0.0100
+  K+          2.6580  0.0003
+Mg2+          1.5546  0.0030

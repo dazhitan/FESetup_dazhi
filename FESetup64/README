@@ -1,0 +1,26 @@
+FESetup
+=======
+
+
+FESetup is a tool that automises setup of protein-ligand free energy
+simulations like thermodynamic integration (TI) and MM-PBSA.  The tool will
+automatically parameterise the ligands (AM1/BCC) and map mutational pairs.
+Supported molecular simulation packages are Sire[1] and AMBER[2].  Supported
+force fields are all modern AMBER force fields including GAFF.  Future plans
+include extending the code to support other popular biomolecular simulation
+software, additional force fields and parameterisation schemes.  We particulary
+aim at ease of use and robustness of the code.
+
+The code is written in Python 2.7 and comes in a self-contained bzip2
+compressed tar archive.
+
+Home page:
+http://www.ccpbiosim.ac.uk/?q=flagship
+
+Wiki documentation:
+http://ccpforge.cse.rl.ac.uk/gf/project/ccpbiosim/wiki/
+
+
+[1] http://siremol.org/
+[2] http://ambermd.org/
+

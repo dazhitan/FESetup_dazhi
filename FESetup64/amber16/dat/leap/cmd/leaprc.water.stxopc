@@ -1,0 +1,26 @@
+#
+# ----- basic leaprc
+# ----- NOTE: this is designed for PDB format 3!
+#
+#	load atom type hybridizations
+#
+addAtomTypes {
+	{ "HW"  "H" "sp3" }
+	{ "OW"  "O" "sp3" }
+	{ "EP"  ""  "sp3" }
+	{ "Cl-"  "Cl" "sp3" }
+	{ "Na+"  "Na" "sp3" }
+	{ "K+"  "K" "sp3" }
+	{ "Mg2+"  "Mg" "sp3" }
+}
+
+#
+# assume that most often proteins use HIE
+#
+#
+loadOff atomic_ions.lib
+loadOff solvents_stxamber.lib
+HOH = OPC
+WAT = OPC
+loadAmberParams frcmod.stxamber_ions
+loadAmberParams frcmod.opc

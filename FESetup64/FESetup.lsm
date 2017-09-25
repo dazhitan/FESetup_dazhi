@@ -1,0 +1,24 @@
+Begin4
+Title:          FESetup
+Version:        1.1
+Entered-date:   2015-01-28
+Description:    FESetup is a tool to automise free energy Molecular
+                Dynamics or Monte Carlo simulations, like thermodynamic
+                integration (TI) or MM-PBSA, of receptor-ligand systems.
+                The tool can parameterise ligands (AM1/BCC) and maps
+                mutational pairs.  Supported molecular simulation
+                packages implementing TI are currently AMBER, GROMACS
+                and Sire.  An abstract MD engine for general simulation
+                can be used with AMBER, GROMACS, NAMD and DL-POLY.
+                Supported force fields are all modern AMBER force fields
+                including GAFF. The code is written in Python 2.7.
+Primary-site:   http://ccpforge.cse.rl.ac.uk/gf/project/ccpbiosim/
+Keywords:       automatic setup tool, simulation, free energy, TI, FEP
+Author:         Hannes.Loeffler@stfc.ac.uk (Hannes Loeffler)
+Maintained-by:  Hannes.Loeffler@stfc.ac.uk (Hannes Loeffler)
+Alternate-site: http://www.ccpbiosim.ac.uk/flagship#fes
+Original-site:  
+Platforms:      Linux
+Copying-policy: GPL
+End
+

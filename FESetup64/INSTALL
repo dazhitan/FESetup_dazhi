@@ -1,0 +1,47 @@
+Installation
+============
+
+
+1) Download the appropriate package from
+http://ccpforge.cse.rl.ac.uk/gf/project/ccpbiosim/frs/
+There are packages for 32bit and 64bit Intel Linux.  If the follwing command
+yields "x86_64" you will need the 64bit version.
+
+    	> uname -m
+        
+
+2) Unpack the compressed tar archive in a convenient location.  NN in the
+following is either 32 or 64 (for 32 or 64bit).
+
+    	> cd /where/I/want/it		# replace the path to whatever you like
+    	> tar xfvj FESetupNN.tar.bz2	# all files to the directory FESetupNN/
+    	> cd FESetupNN/			# replace NN with 32 or 64
+    	> FES_HOME=`pwd`		# FES_HOME only needed for convenience
+        
+
+3) Check FESetupNN/bin/FESetup with your favourite editor if any of the
+environment variables need to be changed.  Point AMBERHOME to the location of
+your AMBER installation.  Our packages come with all relevant tools from the
+AmberTools 13 distribution but we cannot distribute sander as this requires a
+full AMBER license.  Sander is needed if you want to do minimisation or MD.
+Alternatively, you can use NAMD for this purpose but note that currently we do
+not support any of its free energy methods.  Point the environment variable
+NAMDHOME to the location where the executable namd2 is located.  All other
+environment variables already point to the right location and should not be
+changed.
+
+
+4) For ease of use you may want to create a link somewhere in your PATH to
+$FES_HOME/bin/FESetup, e.g.
+
+    	> ln -s $FES_HOME/bin/FESetup /usr/local/bin
+        
+
+5) Check that you have all dependent software installed: Python 2.7, optionally
+AmberTools 13 plus AMBER , and/or optionally NAMD. 
+
+
+6) Check that FESetup is working.  You can do that by running the test set from
+our first tutorial:
+http://ccpforge.cse.rl.ac.uk/gf/project/ccpbiosim/wiki/?pagename=First+Impressions
+ 

@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if [ "$AMBERHOME" ]; then
+
+   $AMBERHOME/bin/teLeap \
+              -I$AMBERHOME/dat/leap/prep \
+              -I$AMBERHOME/dat/leap/prep/oldff \
+              -I$AMBERHOME/dat/leap/lib \
+              -I$AMBERHOME/dat/leap/lib/oldff \
+              -I$AMBERHOME/dat/leap/parm \
+              -I$AMBERHOME/dat/leap/cmd \
+              -I$AMBERHOME/dat/leap/cmd/oldff \
+               $*
+
+else
+
+   echo "Error: you must set the AMBERHOME environment variable!"
+   exit 1 
+
+fi
